@@ -6,7 +6,7 @@ const About = () => {
     let {yourname} = useParams()
 
     useEffect(() => {
-      if (yourname != "defaultname") {
+      if (yourname !== "defaultname") {
         navigate("/error");
       }
     }, []);
